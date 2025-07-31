@@ -27,3 +27,12 @@ h1 {
     margin-top: 10px;
     font-size: 14px;
 }
+
+.dark-mode {
+    background-color: #1a1a1a;
+    color: #e0e0e0;
+}
+.dark-mode .image-card {
+    background: #2a2a2a;
+    border-color: #444;
+}

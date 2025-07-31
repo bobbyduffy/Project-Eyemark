@@ -3,18 +3,38 @@
 <head>
     <title>Project Eyemark Gallery</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="js/legend.js"></script>
+    <script src="js/theme.js"></script>
 </head>
 <body>
+    <button onclick="toggleTheme()">🌓 Toggle Theme</button>
     <h1>Project Eyemark Alpha – Demo Gallery</h1>
+
+    <button onclick="toggleLegend()">📘 What is the Eyemark?</button>
+    <div id="legend-panel" style="display:none; margin: 15px 0; border: 1px solid #ccc; padding: 10px;">
+        <p>The Eyemark is a persistent symbol embedded in AI-generated images. It indicates transparency—not deception—and helps viewers understand that the image was crafted by artificial means.</p>
+        <ul>
+            <li><strong>40–60% opacity:</strong> Blends into the content but remains visible</li>
+            <li><strong>Symbol:</strong> Eye with a microchip pupil – a neutral, universal indicator</li>
+            <li><strong>Mandatory for: </strong> All media created via AI in this archive</li>
+        </ul>
+    </div>
+
     <div class="gallery">
         <div class="image-card">
-            <img src="../images/forest_sunlight_001.png" alt="AI-Generated Forest">
+            <img src="images/forest_sunlight_001.png" alt="AI-Generated Forest">
             <div class="metadata">
                 <p><strong>ID:</strong> forest_sunlight_001</p>
                 <p><strong>Model:</strong> GPT-4o</p>
                 <p><strong>Eyemark Version:</strong> alpha-0.1</p>
             </div>
         </div>
+    </div>
+
+    <div style="margin-top: 20px;">
+        <a href="educators.html">🎓 For Educators</a> |
+        <a href="manifesto.html">📜 Manifesto</a> |
+        <a href="https://github.com/bobbyduffy/Project-Eyemark/issues/new">📤 Submit an Image</a>
     </div>
 </body>
 </html>
